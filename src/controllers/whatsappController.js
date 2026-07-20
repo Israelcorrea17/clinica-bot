@@ -34,7 +34,7 @@ async function processarMensagemWhatsApp(req, res) {
         return res.status(200).json({
             sucesso: true,
             cliente: de,
-            mensagemParaEnviar: dadosIA.respostaTexto
+            mensagemParaEnviar: dadosIA.respostaTexto + "\n\n Lembrete: Por favor, chegue com 15 minutos de antecedência e traga um documento oficial com foto"
         });
 
     } catch (error) {
